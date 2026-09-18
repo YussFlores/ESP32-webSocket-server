@@ -1,0 +1,70 @@
+.header{
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color:whitesmoke;
+            background-color:gray;
+            border-top: 4px solid darkgoldenrod;
+            border-bottom: 4px solid darkgoldenrod;
+        }
+
+body{
+    background-color: darkgray;
+}
+.sensorContainers{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    gap: 32px;
+}
+
+.Container{
+    background-color: gray;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 16px 16px;
+    border: 2px solid orange;
+    border-radius: 32px;
+    flex: 1;
+}
+
+.controlContainers{
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+    gap: 64px;
+}
+
+.controlContainer{
+    background-color: gray;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 16px 16px;
+    border: 2px solid orange;
+    border-radius: 32px;
+    flex: 1;
+   
+}
+
+.buttonsON{
+    color: whitesmoke;
+    background-color: green;
+    font-weight: bold;
+    padding: 12px 30px;
+}
+.buttonsOFF{
+    color:whitesmoke;
+    background-color: darkred;
+    font-weight: bold;
+    padding: 12px 30px;
+}

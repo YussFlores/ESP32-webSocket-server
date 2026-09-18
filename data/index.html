@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House control</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div class="header">
+        <H1>Smart house system</H1>
+        <h1>--Control panel--</h1>
+        <h3>ESP32: <span id="connectionText">disconnected</span></h3>
+    </div>
+
+    <div class="sensorContainers">
+        <div class="Container">
+            <h1>Temperature</h1>
+            <h1 id="temperatureText">0 celsius</h1>
+        </div>
+
+        <div class="Container">
+            <h1>Humidity</h1>
+            <h1 id="humidityText"> 0 %</h1>
+        </div>
+
+        <div class="Container">
+            <h1>Light level</h1>
+            <h1 id="lightText"> 0 % </h1>
+        </div>
+
+        <div class="Container">
+            <h1>Soil level</h1>
+            <h1 id="soilText"> 0 %</h1>
+        </div>
+    </div>
+    
+    <div class="controlContainers">
+        <div class="controlContainer">
+            <h1>Fan</h1>
+            <h1>Status: <span id="fanStatus">ON</span></h1>
+            <button class="buttonsON", onclick="fanON()">ON</button>
+            <button class="buttonsOFF", onclick="fanOFF()">OFF</button>
+        </div>
+
+        <div class="controlContainer">
+            <h1>Ilumination</h1>
+            <h1>Status: <span id="ledStatus">ON</span></h1>
+            <button class="buttonsON" onclick="ledON()">ON</button>
+            <button class="buttonsOFF", onclick="ledOFF()">OFF</button>
+        </div>
+
+        <div class="controlContainer">
+            <h1>Plant Watering</h1>
+            <h1>Status: <span id="waterStatus">ON</span></h1>
+            <button class="buttonsON", onclick="waterON()">ON</button>
+            <button class="buttonsOFF", onclick="waterOFF()">OFF</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
